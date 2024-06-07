@@ -82,8 +82,6 @@ def check_profanity(user_input, model, similarity_threshold=0.3):
     user_input = user_input.lower()
     user_input = user_input.replace('_', ' ').replace(',', ' ')
     user_input = user_input.split()
-    # user_input = remove_stopwords(user_input)
-    # user_input = custom_preprocess(user_input)
     profane_words = []
 
     for word in user_input:
